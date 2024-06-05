@@ -25,8 +25,13 @@ You may not use NDS except in compliance with the Apache License, Version 2.0 an
     sudo locale-gen en_US.UTF-8
     sudo apt install openjdk-8-jdk-headless gcc make flex bison byacc maven
     ```
+3. Install and set up SPARK. 
+    - Download latest distro from [here](https://spark.apache.org/downloads.html)
+    - Preferably >= 3.4
+    - Find and note SPARK_HOME ( /DOWNLOAD/LOCATION/spark-<3.4.1>-bin-hadoop3 )
 
-3. TPC-DS Tools
+
+4. TPC-DS Tools
 
     User must download TPC-DS Tools from [official TPC website](https://www.tpc.org/tpc_documents_current_versions/current_specifications5.asp). The tool will be downloaded as a zip package with a random guid string prefix.
     After unzipping it, a folder called `DSGen-software-code-3.2.0rc1` will be seen.
