@@ -24,6 +24,7 @@ class PythonListener(object):
     @staticmethod
     def get_manager():
         jvm = SparkContext.getOrCreate()._jvm
+        print(SparkContext.getOrCreate()._jsc.sc().listJars())
         manager = getattr(jvm, "{}.{}".format(PythonListener.package, "Manager"))
         return manager
 

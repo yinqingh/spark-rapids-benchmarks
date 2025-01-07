@@ -80,6 +80,8 @@ class PysparkBenchReport:
             listener.register()
         except TypeError as e:
             print("Not found com.nvidia.spark.rapids.listener.Manager", str(e))
+            import traceback
+            traceback.print_exc()
             listener = None
         if listener is not None:
             print("TaskFailureListener is registered.")
